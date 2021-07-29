@@ -320,7 +320,7 @@ export default {
             console.log(response.reference)
             axios
               .post(
-                `http://localhost:8000/api/v1/users/bookings`,
+                `https://mrkayenterprise.herokuapp.com/api/v1/users/bookings`,
                 {
                   referenceCode: response.reference,
                   name: name,

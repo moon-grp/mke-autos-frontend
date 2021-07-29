@@ -45,7 +45,7 @@
 <script>
 import Loading from '~/components/loading.vue'
 export default {
-  layout: 'frames',
+  layout: 'bookings',
   components: {
     Loading,
   },
