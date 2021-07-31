@@ -175,17 +175,17 @@ export default {
             {
                 hid: 'og:title',
                 name: 'og:title',
-                content: this.products.carname,
+                content: "Mrkay Autos || get nice car deals",
             },
             {
                 hid: 'og:image',
                 property: 'og:image',
-                content: this.products.mediaUrl,
+                content: "/mkep1.jpeg",
             },
             {
                 hid: 'og:description',
                 property: 'og:description',
-                content: this.products.description,
+                content: "Clean cars, good deals",
             },
             {
                 hid: 'og:url',
