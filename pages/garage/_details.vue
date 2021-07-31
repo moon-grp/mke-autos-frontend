@@ -175,7 +175,7 @@ export default {
             {
                 hid: 'og:title',
                 name: 'og:title',
-                content: "Mrkay Autos || get nice car deals",
+                content: "Mrkay Autos",
             },
             {
                 hid: 'og:image',
