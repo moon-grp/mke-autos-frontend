@@ -84,7 +84,10 @@
             <v-list-item>
               <v-list-item-title>
                 <nuxt-link to="/garage">
-                  <div class="text-capitalize navT">Autos</div>
+                  <div class="text-capitalize mb-4 navT">Autos</div>
+                </nuxt-link>
+                 <nuxt-link to="/affiliate">
+                  <div class="text-capitalize navT">Signin</div>
                 </nuxt-link>
               </v-list-item-title>
             </v-list-item>

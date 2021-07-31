@@ -26,7 +26,10 @@
             <v-list-item>
               <v-list-item-title>
                 <nuxt-link to="/">
-                  <div class="text-capitalize navT">Home</div>
+                  <div class="text-capitalize mb-4 navT">Home</div>
+                </nuxt-link>
+                <nuxt-link to="/affiliate">
+                  <div class="text-capitalize navT">Signin</div>
                 </nuxt-link>
               </v-list-item-title>
             </v-list-item>
