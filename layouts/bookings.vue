@@ -25,8 +25,8 @@
           >
             <v-list-item>
               <v-list-item-title>
-                <nuxt-link to="#">
-                  <div class="text-capitalize navT">cart</div>
+                <nuxt-link to="/">
+                  <div class="text-capitalize navT">Home</div>
                 </nuxt-link>
               </v-list-item-title>
             </v-list-item>

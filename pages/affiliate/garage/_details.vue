@@ -101,21 +101,27 @@
         </v-col>
         <v-col cols="12">
           <v-row class="justify-center">
-            <h2 class="text-capitalize h2 mt-2 ti">{{ products.carname }}.</h2>
+            <h2 class="text-capitalize h6 mt-2 ti">{{ products.carname }}.</h2>
           </v-row>
 
           <v-row class="justify-center">
-            <h5 class="text-capitalize mt-2 ti">
+            <h5 class="text-capitalize body-2 mt-2 ti">
               {{ products.description }}
             </h5>
           </v-row>
 
           <v-row class="justify-center">
-            <h2 class="text-capitalize mt-2 t2">{{ products.carprice }} NGN</h2>
-            <h2 class="text-capitalize mt-2 t2">
+            <h2 class="text-capitalize h6 mt-2">{{ products.carprice }} NGN</h2>
+          </v-row>
+
+        <v-row class="justify-center">
+            <h2 class="text-capitalize h5 mt-2 t2">
               <b> Commission:</b> {{ products.commission }}
             </h2>
-            <h2 class="text-capitalize mt-2 t2">
+        </v-row>
+
+        <v-row class="justify-center">
+            <h2 class="text-capitalize text-subtitle-2 mt-2 t2">
               <b> Location:</b> {{ products.location }}
             </h2>
           </v-row>
@@ -134,17 +140,22 @@
             ></v-slider>
           </div>  -->
           <v-row class="justify-center">
-            <v-btn
-              x-large
-              rounded
-              class="mt-2"
-              color="#13274a"
-              dark
-              @click="getDetails"
-            >
-              <v-icon left> mdi-cart-variant </v-icon>
-              {{ products.reflink }}
-            </v-btn>
+             <v-col
+          cols="12"
+          sm="6"
+          md="3"
+        >
+          <v-text-field
+                v-model="referrerLink"
+                label="Referee link"
+                outlined
+                readonly
+                append-icon="mdi-content-copy"
+                color="#2979ff"
+                class="pt-4"
+                @click:append="clipBoard"
+              ></v-text-field>
+             </v-col>
           </v-row>
         </v-col>
       </v-row>

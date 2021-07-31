@@ -163,6 +163,38 @@ export default {
   components: {
     Loading,
   },
+  head() {
+    return {
+        title: this.products.carname,
+        meta: [
+            {
+                hid: 'description',
+                name: 'description',
+                content: this.products.description,
+            },
+            {
+                hid: 'og:title',
+                name: 'og:title',
+                content: this.products.carname,
+            },
+            {
+                hid: 'og:image',
+                property: 'og:image',
+                content: this.products.mediaUrl,
+            },
+            {
+                hid: 'og:description',
+                property: 'og:description',
+                content: this.products.description,
+            },
+            {
+                hid: 'og:url',
+                property: 'og:url',
+                content: `https://mke-autos.herokuapp.com/garage/${this.id}`,
+            },
+        ],
+    }
+},
   data() {
     return {
       id: this.$route.params.details,
